@@ -31,3 +31,13 @@ def run_tests():
 # Edit this function 
 def palindromic(n):
 
+    x = n // 100
+    y = n % 100
+    z = y % 10 
+
+    if x == z:
+        print("Yes")
+
+    else:
+        print("No")
+

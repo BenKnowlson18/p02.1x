@@ -48,10 +48,17 @@ Tests:
 # Use this to test your solution. Don't edit it! 
 import doctest 
 def run_tests(): 
-    doctest.testmod(verbose=True) 
+    doctest.testmod(verbose=True)
  
  
 # Edit this function 
 def tax(earnings):
 
+    if earnings >= 10000:
+        print(earnings - earnings)
 
+    elif 10000 < earnings <= 40000:
+        print(earnings // 5)
+
+    elif earnings > 40000:
+        print(earnings // 2.5)

@@ -41,3 +41,7 @@ def run_tests():
  
 # Edit this function 
 def odd_rounding(num, round_to):
+
+    rem = (num % 2)
+    if num > 0 and rem == 0:
+        print(num // round_to * roundto)
