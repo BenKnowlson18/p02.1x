@@ -3,7 +3,7 @@ Problem:
 
     The function in_sequence takes in 3 inputs: a, b and t.
 
-    If t is present in the sequence an + b, it prints which term it is in
+    If t is present in the sequence a + b, it prints which term it is in
     the sequence, otherwise it prints out "Not present".
 
     For example:
@@ -39,3 +39,10 @@ def run_tests():
  
 # Edit this function 
 def in_sequence(a, b, n):
+
+    if (n - b) % a != 0 or (n - b) // a < 0:
+        print("Not present")
+
+    
+    elif (n - b) % a == 0:
+        print((n - b) // a)
